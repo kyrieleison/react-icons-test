@@ -17,6 +17,11 @@ module.exports = {
         loader: 'babel'
       },
       {
+        test: /\.js$/,
+        loader: 'babel',
+        include: './node_modules/react-icons'
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract(['css'])
       },
